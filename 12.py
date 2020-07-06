@@ -904,10 +904,10 @@ def login():
 	os.system('clear')
 	print logo11
         print "1 New Update"
-    print "2 Login With Facebook"
-    print "3 Login With Token"
-    print
-    pilih_login()
+	print "2 Login With Facebook"
+	print "3 Login With Token"
+	print
+	pilih_login()
 
 def pilih_login():
 	peak = raw_input("\n\033[1;91mChoose an Option>>> \033[1;95m")
