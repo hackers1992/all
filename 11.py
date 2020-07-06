@@ -2829,6 +2829,8 @@ def tokenz():
 		zedd = open("login.txt", 'w')
 		zedd.write(toket)
 		zedd.close()
+		print "\n[✓] Logged In Successfully."
+		time.sleep(1)
 		menu()
 	except KeyError:
 		print "\033[1;91m[!] Wrong"
