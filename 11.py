@@ -908,7 +908,7 @@ def login():
 	print "\033[1;93m-•◈•-\033[1;91m> \033[1;91m2.\x1b[1;96m Login  Facebook  "
         time.sleep(0.05)
         print "\033[1;93m-•◈•-\033[1;91m> \033[1;91m3.\x1b[1;95m Login  Using Token"
-        time.sleep(0.05)
+        time.sleep(0.01)
         print "\033[1;93m-•◈•-\033[1;91m> \033[1;91m4.\x1b[1;97m Get Access Token App Fb"
         time.sleep(0.05)
         
@@ -927,6 +927,16 @@ def pilih_login():
 		login1()
         elif peak =="3":
 	        tokenz()
+		os.system('clear')
+		print logo
+		hosp = raw_input("[+] Give Token : ")
+		tik()
+		hopa = open('login.txt','w')
+		hopa.write(hosp)
+		hopa.close()
+		print "\n[✓] Logged In Successfully."
+		time.sleep(1)
+		menu()
         elif peak =="4":
 	        os.system('xdg-open https://m.apkpure.com/get-access-token/com.proit.thaison.getaccesstokenfacebook/download/1-APK?from=versions%2Fversion')
 	        login()
